@@ -1,0 +1,118 @@
+const closeDropdownOnOutsideClick = (event) =>
+  !isMenuLink(event) && removeClassFromNodeList('visible', getSubMenuNodes());
+
+const closeDropdownOnScroll = () =>
+  removeClassFromNodeList('visible', getSubMenuNodes());
+
+const removeClassFromNodeList = (classToRemove, nodeList) => {
+  for (node of nodeList) {
+    if (node.classList.contains(classToRemove)) {
+      node.classList.remove(classToRemove);
+    }
+  }
+};
+
+const isMenuLink = (event) =>
+  event.target.classList.contains('gdc-js-menu-link');
+
+const getSubMenuNodes = () => document.querySelectorAll('.nav__submenu');
+
+var gdcEqualHeightProductTiles = function () {
+  var imageSelector =
+    '.product-tile__image .responsive-image__image, .product-tile__images .responsive-image__image';
+  var imageWrapSelector = '.product-tile__image, .product-tile__images';
+  var $productTileImages = document.querySelectorAll(imageSelector);
+  var $productTileImageWrapper = document.querySelectorAll(imageWrapSelector);
+
+  if ($productTileImages.length > 0) {
+    var maxHeight = 0;
+
+    $productTileImages.forEach(function ($element) {
+      var tempheight = $element.offsetHeight;
+      if (tempheight > maxHeight) {
+        maxHeight = tempheight;
+      }
+    });
+
+    var newHeight = maxHeight.toString() + 'px';
+
+    $productTileImageWrapper.forEach(function ($element) {
+      $element.style.height = newHeight;
+    });
+  }
+};
+
+var gdcHide = function ($element) {
+  $element.style.display = 'none';
+};
+
+var gdcShow = function ($element) {
+  $element.style.display = 'block';
+};
+
+var gdcToggle = function ($element) {
+  if (window.getComputedStyle($element).display === 'block') {
+    gdcHide($element);
+    return;
+  }
+
+  gdcShow($element);
+};
+
+document.addEventListener('DOMContentLoaded', function () {
+  let navItems = document.querySelectorAll('.nav__submenu');
+
+  for (item of navItems) {
+    item.setAttribute('onclick', 'event.stopPropagation()');
+  }
+  // ======================================================================
+  // Equal heights for product tiles
+  gdcEqualHeightProductTiles();
+
+  // ======================================================================
+  // FAQ accordion
+  var $questionWrappers = document.querySelectorAll('.question__wrapper');
+
+  $questionWrappers.forEach(function ($element) {
+    $element.addEventListener('click', function (e) {
+      var $target = event.target.closest('.question__wrapper');
+      var $sibling = $target.nextElementSibling;
+      var $iconPlus = $target.querySelector('.icon-plus');
+      var $iconMinus = $target.querySelector('.icon-minus');
+
+      $sibling.classList.toggle('open');
+      gdcToggle($iconPlus);
+      gdcToggle($iconMinus);
+    });
+  });
+});
+
+// ======================================================================
+// Collection pagination
+window.addEventListener('load', function () {
+  var pagination = document.querySelector('.collection__bar-view');
+
+  if (pagination !== null) {
+    var twelve = pagination.querySelector(
+      '[data-collection-template="view-12"]'
+    );
+    var thirtySix = pagination.querySelector(
+      '[data-collection-template="view-36"]'
+    );
+
+    twelve.classList.remove('active');
+    thirtySix.classList.add('active');
+  }
+});
+
+// ======================================================================
+// Equal heights for product tiles
+window.addEventListener('resize', gdcEqualHeightProductTiles);
+
+// ======================================================================
+// Close dropdown menu if open on click outside
+window.addEventListener('click', closeDropdownOnOutsideClick);
+
+// ======================================================================
+// Close dropdown menu if open on click outside
+window.addEventListener('scroll', closeDropdownOnScroll);
