@@ -1,0 +1,207 @@
+{% assign header_image = section.settings.header_image %}
+{% assign header_title = section.settings.header_title %}
+{% assign header_text = section.settings.header_text %}
+{% assign bottom_text = section.settings.bottom_text %}
+
+<div class="gdc-gift-card__section">
+  <header class="gdc-image-hero">
+    <img class="gdc-card__image" src="{{ header_image | img_url: '300x' }}" /> 
+  </header>
+
+  <div class="gdc-text-section">
+    <div class="gdc-text gdc-text--narrow">
+      <h2 class="gdc-text__title">{{ header_title }}</h2>
+      {{ header_text }}
+    </div>
+  </div>
+
+  <div class="gdc-card-grid">
+    {% for block in section.blocks %}
+    {% assign card_image = block.settings.image %}
+    {% assign card_text = block.settings.text %}
+    {% assign button_url = block.settings.button_url %}
+
+    <div class="gdc-card">
+      <div class="gdc-card__header">
+
+        <img class="gdc-card__image" src="{{ card_image | img_url: '300x' }}" /> 
+
+      </div>
+      <div class="gdc-card__text">
+        {{ card_text }}	
+      </div>
+      <a href={{ button_url }} class="gdc-card__button" target="_blank"><span>Send a Gift Card</span></a>
+    </div> 
+    {% endfor %}
+  </div>
+
+  <div class="gdc-text-section">
+    <div class="gdc-text gdc-text--wide">
+      {{ bottom_text }}
+    </div>
+  </div>
+</div>
+
+{% stylesheet %}
+
+
+  .gdc-card-grid,
+  .gdc-text-section,
+  .gdc-card,
+  .gdc-card__header,
+  .gdc-card__button {
+	display: flex;  
+  }
+
+  .gdc-image-hero {
+	width: 100%;
+	height: 400px;
+	overflow: hidden;
+	margin-bottom: 40px;    
+  }
+
+  .gdc-image-hero img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: top;    
+  }
+
+  .gdc-text-section {
+	width: 100%;
+	justify-content: center;         
+	align-items: center; 
+	margin-bottom: 40px;
+  }
+
+  .gdc-text--narrow {
+	max-width: 500px; 
+  }
+
+  .gdc-text--wide {
+	width: 100%; 
+  }
+
+  .gdc-text__title {
+	font-size: 24px;
+  }
+
+  .gdc-text {
+	text-align: center;
+	font-size: 18px;
+  }
+  .gdc-card-grid {
+	width: 100%;
+	justify-content: center;
+	flex-wrap: wrap;
+  }
+
+  .gdc-card {
+	position: relative;
+	flex-direction: column;
+	justify-content: space-between;  
+	align-items: center;
+	padding: 20px;
+	width: 350px;
+	min-width: 350px;
+	height: auto;
+	box-shadow: 0px 2px 6px 1px rgba(0, 0, 0, 0.15);
+	margin-right: 30px;
+	margin-bottom: 40px;
+  }
+   
+  .gdc-card__header,
+  .gdc-card__text	{
+	width: 100%; 
+	text-align: center;
+  }
+  
+  .gdc-card__header{
+	justify-content: center;
+	align-items: center;
+	background: black;
+	height: 40%;    
+  }
+
+  .gdc-card__image {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+  }
+
+  .gdc-card__text {
+	padding: 20px;
+	font-size: 16px;
+	height: 45%;
+  }
+
+  .gdc-card__button {
+	border: 1px solid #333;  
+	padding: 10px;
+	margin-bottom: 20px; 
+	width: 200px;
+	justify-content: center;         
+	align-items: center;
+  }
+{% endstylesheet %}
+
+
+{% schema %}
+  {
+    "name": "Gift Cards",
+    "settings": [
+		{
+          "id": "header_image",
+          "type": "image_picker",
+          "label": "Header Image"
+        },
+        {
+          "id": "header_title",
+          "type": "text",
+          "label": "Header Text"
+        },
+        {
+          "id": "header_text",
+          "type": "richtext",
+          "label": "Header Text"
+        },
+        {
+          "id": "bottom_text",
+          "type": "richtext",
+          "label": "Bottom Text"
+        }
+	],
+	 "blocks": [
+      {
+        "type": "Card", 
+        "name": "Card Entry",
+        "settings": [
+        {
+          "type": "header",
+          "content": "Card"
+        },
+        {
+          "id": "image",
+          "type": "image_picker",
+          "label": "Card Image"
+        },
+        {
+          "id": "text",
+          "type": "richtext",
+          "label": "Card Text"
+        },
+        {
+          "id": "button_url",
+          "type": "text",
+          "label": "Button URL"
+        }
+	  ]
+    }
+  ]
+  }
+{% endschema %}
+
+
+
+{% javascript %}
+{% endjavascript %}

@@ -23,10 +23,10 @@
     "color_contrast_border": "#e2e2e2",
     "color_contrast_input": "#ffffff",
     "color_contrast_input_text": "#363636",
-    "color_navigation_text": "#ffffff",
-    "color_navigation_meta_text": "#ffffff",
-    "color_navigation_bg": "#193729",
-    "color_navigation_border": "#466634",
+    "color_navigation_text": "#3d3d3d",
+    "color_navigation_meta_text": "#3d3d3d",
+    "color_navigation_bg": "#ffffff",
+    "color_navigation_border": "#ffffff",
     "color_navigation_feature": "#193729",
     "color_drawer_text": "#ffffff",
     "color_drawer_meta_text": "#8a8a8a",
@@ -100,7 +100,7 @@
             "type": "text",
             "settings": {
               "title": "Store Hours",
-              "text": "<p>Monday to Saturday<br>11AM - 6PM, Closed on Statutory Holidays<\/p>\n<p><\/p>",
+              "text": "<p>Monday to Saturday<br\/>11AM - 6PM<\/p><p><\/p>",
               "price_match_image": "shopify:\/\/shop_images\/price_match_white.png",
               "price_match_image_width": 150,
               "price_match_image_link": "shopify:\/\/pages\/price-match-guarantee"
@@ -136,50 +136,56 @@
             "type": "mega_nav",
             "settings": {
               "dropdown_parent_link": "Equip",
-              "mega_nav_featured_image": "",
               "featured_image_heading": "",
-              "featured_image_link_text": "",
-              "featured_image_link": ""
+              "featured_image_link_text": ""
             }
           },
           "1589992303895": {
             "type": "mega_nav",
             "settings": {
               "dropdown_parent_link": "Women",
-              "mega_nav_featured_image": "",
               "featured_image_heading": "",
-              "featured_image_link_text": "",
-              "featured_image_link": ""
+              "featured_image_link_text": ""
             }
           },
           "1589992686686": {
             "type": "mega_nav",
             "settings": {
               "dropdown_parent_link": "Men",
-              "mega_nav_featured_image": "",
               "featured_image_heading": "",
-              "featured_image_link_text": "",
-              "featured_image_link": ""
+              "featured_image_link_text": ""
             }
           },
           "1589992693051": {
             "type": "mega_nav",
             "settings": {
               "dropdown_parent_link": "Kids",
-              "mega_nav_featured_image": "",
               "featured_image_heading": "",
-              "featured_image_link_text": "",
-              "featured_image_link": ""
+              "featured_image_link_text": ""
             }
           },
           "1589992702634": {
             "type": "mega_nav",
             "settings": {
               "dropdown_parent_link": "About",
-              "mega_nav_featured_image": "",
               "featured_image_heading": "About",
-              "featured_image_link_text": "",
-              "featured_image_link": ""
+              "featured_image_link_text": ""
+            }
+          },
+          "063bdb35-763c-45ed-bf10-7c8dd63e22ec": {
+            "type": "mega_nav",
+            "settings": {
+              "dropdown_parent_link": "Equipment",
+              "featured_image_heading": "",
+              "featured_image_link_text": ""
+            }
+          },
+          "dbd8f477-6163-4b13-bf82-213157106bac": {
+            "type": "mega_nav",
+            "settings": {
+              "dropdown_parent_link": "Footwear",
+              "featured_image_heading": "",
+              "featured_image_link_text": ""
             }
           }
         },
@@ -188,12 +194,13 @@
           "1589992303895",
           "1589992686686",
           "1589992693051",
-          "1589992702634"
+          "1589992702634",
+          "063bdb35-763c-45ed-bf10-7c8dd63e22ec",
+          "dbd8f477-6163-4b13-bf82-213157106bac"
         ],
         "settings": {
           "announcement_bar_enabled": true,
-          "announcement_bar_text": "Website under construction! Drop in or call the store for missing items that you need!",
-          "announcement_bar_link": "",
+          "announcement_bar_text": "More gear is being added everyday!",
           "header_style": "inline",
           "header_alignment": "center",
           "logo": "shopify:\/\/shop_images\/Coast_Mountain_Sports_transparent.png",
@@ -204,7 +211,6 @@
           "transparent_header_foreground_color": "#ffffff",
           "transparent_header_border_color": "#ffffff",
           "transparent_header_border_opacity": 10,
-          "transparent_header_logo": "",
           "search_quick_links": ""
         }
       },
@@ -278,11 +284,9 @@
           "dynamic-slideshow-0": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/5e49e654d7aa9-DJI_0456.jpeg",
-              "video_url": "",
+              "image": "shopify:\/\/shop_images\/Jason_Northern_Lights.jpeg",
               "title": "AT HOME IN THE NORTH",
-              "subheading": "",
-              "link": "",
+              "subheading": "We live here. We play here.\nWe know northern gear.",
               "link_text": "",
               "link_style": "button",
               "overlay_opacity": 0,
@@ -305,77 +309,73 @@
       "dynamic-collage": {
         "type": "dynamic-collage",
         "blocks": {
-          "1592751484782": {
-            "type": "grid_item",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Screen_Shot_2020-09-03_at_4.54.46_PM.png",
-              "size": "small",
-              "video_url": "",
-              "overlay_opacity": 0,
-              "overlay_color": "#ffffff",
-              "text_color": "#ffffff",
-              "heading": "Patagonia SALE",
-              "subheading": "",
-              "text_max_width": 22,
-              "link": "shopify:\/\/collections\/patagonia-past-season-on-sale",
-              "link_text": "Shop Now",
-              "link_style": "button",
-              "horizontal_text_position": "right",
-              "vertical_text_position": "bottom"
-            }
-          },
-          "dynamic-collage-3": {
-            "type": "grid_item",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/62057906604__72225A4B-27DB-43BF-A38F-3D73423BF24D.JPG",
-              "size": "large",
-              "video_url": "",
-              "overlay_opacity": 0,
-              "overlay_color": "#000000",
-              "text_color": "#ffffff",
-              "heading": "End of Season Sale up to 50% off",
-              "subheading": "",
-              "text_max_width": 19,
-              "link": "shopify:\/\/collections\/sale",
-              "link_text": "Great  deals",
-              "link_style": "button",
-              "horizontal_text_position": "right",
-              "vertical_text_position": "bottom"
-            }
-          },
           "dynamic-collage-1": {
             "type": "grid_item",
             "settings": {
-              "image": "shopify:\/\/shop_images\/grizzly.png",
+              "image": "shopify:\/\/shop_images\/child_in_snow_fort.png",
               "size": "large",
-              "video_url": "",
-              "overlay_opacity": 0,
+              "overlay_opacity": 10,
               "overlay_color": "#000000",
               "text_color": "#ffffff",
-              "heading": "Bear Safety",
-              "subheading": "Always be Bear Aware...and Prepared",
+              "heading": "Kids' Winter Jackets",
+              "subheading": "",
               "text_max_width": 22,
-              "link": "shopify:\/\/collections\/bear-safety",
+              "link": "shopify:\/\/collections\/kids-winter-coats",
               "link_text": "SHOP NOW",
               "link_style": "button",
               "horizontal_text_position": "left",
               "vertical_text_position": "bottom"
             }
           },
-          "1590443734211": {
+          "1592751484782": {
             "type": "grid_item",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Screen_Shot_2020-07-16_at_3.19.15_PM.png",
+              "image": "shopify:\/\/shop_images\/Screen_Shot_2020-10-25_at_2.12.35_PM.png",
               "size": "small",
-              "video_url": "",
               "overlay_opacity": 0,
               "overlay_color": "#000000",
               "text_color": "#ffffff",
-              "heading": "Rubber Boots for Fall",
+              "heading": "Carry your Load",
+              "subheading": "",
+              "text_max_width": 19,
+              "link": "shopify:\/\/collections\/womens-purses-bags-wallets",
+              "link_text": "Shop Bags and Purses",
+              "link_style": "button",
+              "horizontal_text_position": "left",
+              "vertical_text_position": "bottom"
+            }
+          },
+          "dynamic-collage-3": {
+            "type": "grid_item",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Screen_Shot_2020-10-19_at_4.55.48_PM.png",
+              "size": "large",
+              "overlay_opacity": 0,
+              "overlay_color": "#000000",
+              "text_color": "#ffffff",
+              "heading": "Warm Cozy Fleece",
+              "subheading": "",
+              "text_max_width": 19,
+              "link": "shopify:\/\/collections\/fleece",
+              "link_text": "Find Yours!",
+              "link_style": "button",
+              "horizontal_text_position": "right",
+              "vertical_text_position": "top"
+            }
+          },
+          "1590443734211": {
+            "type": "grid_item",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/couple_on_mountain_1fe4ffb6-fa50-4aa1-9568-36f057499012.png",
+              "size": "small",
+              "overlay_opacity": 0,
+              "overlay_color": "#000000",
+              "text_color": "#ffffff",
+              "heading": "",
               "subheading": "",
               "text_max_width": 25,
-              "link": "shopify:\/\/collections\/boots-for-mud-and-water-and-fun",
-              "link_text": "Find Yours",
+              "link": "shopify:\/\/collections\/on-sale",
+              "link_text": "What's On Sale?",
               "link_style": "button",
               "horizontal_text_position": "left",
               "vertical_text_position": "top"
@@ -383,9 +383,9 @@
           }
         },
         "block_order": [
+          "dynamic-collage-1",
           "1592751484782",
           "dynamic-collage-3",
-          "dynamic-collage-1",
           "1590443734211"
         ],
         "settings": {}
@@ -395,7 +395,6 @@
         "settings": {
           "enable_exit_intent": false,
           "exit_intent_position": "bottom-right",
-          "exit_intent_image": "",
           "exit_intent_heading": "Sign up for our newsletter",
           "exit_intent_text": "",
           "exit_intent_dismiss_text": "No thanks"
@@ -411,8 +410,7 @@
               "image": "shopify:\/\/shop_images\/noun_Box_1697276_100x_50acddda-260b-437c-9fda-b3c007f6c772.png",
               "image_max_width": 100,
               "title": "Free Shipping Over Minimum spend",
-              "subheading": "",
-              "link": ""
+              "subheading": ""
             }
           },
           "1588992606527-1": {
@@ -421,8 +419,7 @@
               "image": "shopify:\/\/shop_images\/noun_Speech_Bubble_1697245_100x_9cc88818-5e0c-4dd5-85cc-d30f2aa8ae89.png",
               "image_max_width": 100,
               "title": "Knowledgeable experts",
-              "subheading": "",
-              "link": ""
+              "subheading": ""
             }
           },
           "1588992606527-2": {
@@ -431,8 +428,7 @@
               "image": "shopify:\/\/shop_images\/noun_Credit_Card_1697236_100x_92794b51-a41f-48af-bc26-447b35b143ad.png",
               "image_max_width": 100,
               "title": "Rocksolid Guarantee",
-              "subheading": "",
-              "link": ""
+              "subheading": ""
             }
           }
         },
@@ -450,10 +446,10 @@
       "1588995964747": {
         "type": "dynamic-featured-collection",
         "settings": {
-          "collection": "staff-picks",
-          "title": "Items for Cool Fall Weather!",
-          "collection_subheading": "",
-          "link_text": "Shop All",
+          "collection": "winter-basics",
+          "title": "Winter Basics",
+          "collection_subheading": "We have so many items to help you love winter!",
+          "link_text": "Shop now",
           "heading_alignment": "center",
           "products_per_row": 4,
           "rows": 2,
@@ -481,7 +477,6 @@
           "title": "Parallax image section",
           "subheading": "This section can be used to organize the homepage into distinct areas, or mix and match it before or after items in the Collage grid to give it a magazine-like feel.",
           "text_max_width": 30,
-          "link": "",
           "link_text": "Try it out",
           "link_style": "button",
           "horizontal_text_position": "left",
@@ -499,7 +494,6 @@
           "title": "Parallax image section",
           "subheading": "This section can be used to organize the homepage into distinct areas, or mix and match it before or after items in the Collage grid to give it a magazine-like feel.",
           "text_max_width": 30,
-          "link": "",
           "link_text": "Try it out",
           "link_style": "button",
           "horizontal_text_position": "left",
@@ -719,15 +713,15 @@
       },
       "1590444203962": {
         "type": "dynamic-parallax",
+        "disabled": true,
         "settings": {
-          "image": "shopify:\/\/shop_images\/Dempster_2020-7656.jpg",
+          "image": "shopify:\/\/shop_images\/107101280_10157242126851297_559043986328454429_o.jpg",
           "overlay_opacity": 0,
           "overlay_color": "#707070",
           "text_color": "#ffffff",
           "title": "Trail Notes & Community Notes",
           "subheading": "We have so much to share about the Outdoors and our wonderful Territory!",
           "text_max_width": 21,
-          "link": "",
           "link_text": "Try it out",
           "link_style": "button",
           "horizontal_text_position": "center",
@@ -872,13 +866,13 @@
       "1593554571859": {
         "type": "dynamic-featured-collection",
         "settings": {
-          "collection": "sale",
-          "title": "End of Season Sale",
-          "collection_subheading": "Super Savings from 20% to 50% off.\n\nHere's a selection or click Shop Now to see all the great deals.",
-          "link_text": "Shop Now",
+          "collection": "vests",
+          "title": "Warm to the Core",
+          "collection_subheading": "",
+          "link_text": "Shop Vests",
           "heading_alignment": "center",
           "products_per_row": 4,
-          "rows": 3,
+          "rows": 1,
           "outline": false
         }
       },
@@ -892,17 +886,21 @@
               "logo": "shopify:\/\/shop_images\/arcteryx-logo.png",
               "logo_width": 200,
               "logo_text": "Arc'teryx",
-              "text": "<p>At Arc&rsquo;teryx, the goal is to create products that are as good as they can possibly be, performing over time and beyond expectation.&nbsp; This is the heart of what they do and the roots of their company &mdash;to create what does not yet exist.<\/p>\n<p><\/p>\n<p>They develop simple solutions to complex challenges; this is the essence of their minimalism and their philosophy of design.<\/p>\n<p><\/p>\n<p>Coast has carried Arc&rsquo;teryx for almost 30 years.<\/p>",
+              "text": "<p>At Arc’teryx, the goal is to create products that are as good as they can possibly be, performing over time and beyond expectation.  This is the heart of what they do and the roots of their company —to create what does not yet exist.<\/p><p><\/p><p>They develop simple solutions to complex challenges; this is the essence of their minimalism and their philosophy of design.<\/p><p><\/p><p>Coast has carried Arc’teryx for almost 30 years.<\/p>",
               "image": "shopify:\/\/shop_images\/arcteryx-hero.png",
+              "filtered_collections_per_row": 3,
               "filtered_collection_1_image": "shopify:\/\/shop_images\/F20_ARCTERYX_CENTRALE_01284.jpg",
               "filtered_collection_1_title": "Women",
-              "filtered_collection_1_link": "shopify:\/\/collections\/arcteryx-women",
+              "filtered_collection_1_link": "shopify:\/\/collections\/arcteryx-womens",
               "filtered_collection_2_image": "shopify:\/\/shop_images\/F20_ARCTERYX_PIEDMONT_01067.jpg",
               "filtered_collection_2_title": "Men",
-              "filtered_collection_2_link": "shopify:\/\/collections\/men",
+              "filtered_collection_2_link": "shopify:\/\/collections\/arcteryx-mens",
               "filtered_collection_3_image": "shopify:\/\/shop_images\/191212_F20_Lookbook_Arc16378shrp.png",
               "filtered_collection_3_title": "Accessories",
-              "filtered_collection_3_link": "shopify:\/\/collections\/accessories-1"
+              "filtered_collection_3_link": "shopify:\/\/collections\/arcteryx-accessories",
+              "filtered_collection_4_title": "",
+              "filtered_collection_5_title": "",
+              "filtered_collection_6_title": ""
             }
           },
           "1597798121848": {
@@ -912,8 +910,9 @@
               "logo": "shopify:\/\/shop_images\/IB_logo.png",
               "logo_width": 250,
               "logo_text": "",
-              "text": "<p>icebreaker looks to nature for the answers and for innovative ways to do more with less. Working with what nature provides and adapting as nature does, icebreaker enables consumers to join a movement towards choosing natural and preserving our planet for generations to come.<\/p>\n<p>We love icebreaker merino wool.&nbsp; It is warm when wet, it is sustainable and recyclable, it regulates body temperature, it does not itch and it is oh, so beautiful.<\/p>\n<p><\/p>\n<p><\/p>",
+              "text": "<p>icebreaker looks to nature for the answers and for innovative ways to do more with less. Working with what nature provides and adapting as nature does, icebreaker enables consumers to join a movement towards choosing natural and preserving our planet for generations to come.<\/p><p>We love icebreaker merino wool.  It is warm when wet, it is sustainable and recyclable, it regulates body temperature, it does not itch and it is oh, so beautiful.<\/p><p><\/p><p><\/p>",
               "image": "shopify:\/\/shop_images\/WOMEN-FW19-LOCATION-WAYPOINT-ROLL-NECK-SWEATER-104317401_1.jpg",
+              "filtered_collections_per_row": 3,
               "filtered_collection_1_image": "shopify:\/\/shop_images\/WOMEN-FW19-LOCATION-ELEMENTAL-LS-ZIP-104895510_4.jpg",
               "filtered_collection_1_title": "Women's",
               "filtered_collection_1_link": "shopify:\/\/collections\/womens-icebreaker",
@@ -922,7 +921,10 @@
               "filtered_collection_2_link": "shopify:\/\/collections\/mens-icebreaker",
               "filtered_collection_3_image": "shopify:\/\/shop_images\/KIDS-FW19-LOCATION-200-OASIS-LS-CREWE-104501013_4.jpg",
               "filtered_collection_3_title": "Kids'",
-              "filtered_collection_3_link": "shopify:\/\/collections\/kids-icebreaker"
+              "filtered_collection_3_link": "shopify:\/\/collections\/kids-icebreaker",
+              "filtered_collection_4_title": "",
+              "filtered_collection_5_title": "",
+              "filtered_collection_6_title": ""
             }
           },
           "1597859910365": {
@@ -932,8 +934,9 @@
               "logo": "shopify:\/\/shop_images\/mountain-hardware-wide-logo.jpg",
               "logo_width": 200,
               "logo_text": "",
-              "text": "<p>Mountain Hardwear was founded in 1993 by a small band of outdoor industry iconoclasts&hellip; They strive to do things differently: from the first taped soft shell jacket to the first tent with 180 degree views, their products combine cutting edge with unconventional. <\/p>\n<p><\/p>\n<p>We at Coast have loved Mountain Hardwear designs for many years&hellip; so many of them industry award winning&hellip; Think of Stretchdown, the Ghost Whisperer, the amazing Dynama pants and oh so much more!<\/p>",
+              "text": "<p>Mountain Hardwear was founded in 1993 by a small band of outdoor industry iconoclasts… They strive to do things differently: from the first taped soft shell jacket to the first tent with 180 degree views, their products combine cutting edge with unconventional. <\/p><p><\/p><p>We at Coast have loved Mountain Hardwear designs for many years… so many of them industry award winning… Think of Stretchdown, the Ghost Whisperer, the amazing Dynama pants and oh so much more!<\/p>",
               "image": "shopify:\/\/shop_images\/DSC0795.jpg",
+              "filtered_collections_per_row": 3,
               "filtered_collection_1_image": "shopify:\/\/shop_images\/DSC2474.jpg",
               "filtered_collection_1_title": "Men's",
               "filtered_collection_1_link": "shopify:\/\/collections\/mens-mountain-hardwear",
@@ -942,27 +945,34 @@
               "filtered_collection_2_link": "shopify:\/\/collections\/womens-mountain-hardwear",
               "filtered_collection_3_image": "shopify:\/\/shop_images\/2019_09_Everest_FLEBEAU_day17-737.jpg",
               "filtered_collection_3_title": "Equipment",
-              "filtered_collection_3_link": "shopify:\/\/collections\/mountain-hardwear-equipment"
+              "filtered_collection_3_link": "shopify:\/\/collections\/mountain-hardwear-equipment",
+              "filtered_collection_4_title": "",
+              "filtered_collection_5_title": "",
+              "filtered_collection_6_title": ""
             }
           },
           "1597865955815": {
             "type": "collection",
             "settings": {
               "collection": "canada-goose",
-              "logo": "shopify:\/\/shop_images\/Screen_Shot_2020-08-19_at_11.54.06_AM.png",
-              "logo_width": 255,
+              "logo": "shopify:\/\/shop_images\/canadagoose-web-logo.png",
+              "logo_width": 200,
               "logo_text": "",
-              "text": "<p>Founded in a small warehouse in Toronto in 1957, Canada Goose has grown into one of the world's leading makers of performance luxury apparel.&nbsp; Every collection is informed by the rugged demands of the Arctic and inspired by relentless innovation and uncompromised craftmanship.&nbsp;<\/p>\n<p>In the Yukon, Canada Goose provides the luxury of warmth in -40c in addition to beautiful layering pieces and accessories.<\/p>",
+              "text": "<p>Founded in a small warehouse in Toronto in 1957, Canada Goose has grown into one of the world&#x27;s leading makers of performance luxury apparel.  Every collection is informed by the rugged demands of the Arctic and inspired by relentless innovation and uncompromised craftmanship. <\/p><p>In the Yukon, Canada Goose provides the luxury of warmth in -40c in addition to beautiful layering pieces and accessories.<\/p>",
               "image": "shopify:\/\/shop_images\/TRVL-ANT-F94000.jpg",
+              "filtered_collections_per_row": 3,
               "filtered_collection_1_image": "shopify:\/\/shop_images\/3815L_67_d.jpg",
               "filtered_collection_1_title": "Women's",
-              "filtered_collection_1_link": "",
-              "filtered_collection_2_image": "shopify:\/\/shop_images\/2004M_d.jpg",
+              "filtered_collection_1_link": "shopify:\/\/collections\/canada-goose-womens",
+              "filtered_collection_2_image": "shopify:\/\/shop_images\/5116M_699.jpg",
               "filtered_collection_2_title": "Men's",
-              "filtered_collection_2_link": "",
+              "filtered_collection_2_link": "shopify:\/\/collections\/canada-goose-mens",
               "filtered_collection_3_image": "shopify:\/\/shop_images\/6936L_61.jpg",
               "filtered_collection_3_title": "Accessories",
-              "filtered_collection_3_link": ""
+              "filtered_collection_3_link": "shopify:\/\/collections\/canada-goose-accessories",
+              "filtered_collection_4_title": "",
+              "filtered_collection_5_title": "",
+              "filtered_collection_6_title": ""
             }
           },
           "1597868878399": {
@@ -972,17 +982,21 @@
               "logo": "shopify:\/\/shop_images\/Patagonia-Logo.jpg",
               "logo_width": 200,
               "logo_text": "",
-              "text": "<p>Patagonia's mission statement:<\/p>\n<p>We are in business to save our home planet.&nbsp;<\/p>\n<p><\/p>\n<p>The buyers at Coast curate our Patagonia selection to ensure we have the best items for Yukoners: for our climate and our lives.&nbsp;<\/p>\n<p><\/p>\n<p>Patagonia, assisted by Coast Mountain Sports, has funded an ongoing study of the Ibex watershed and the salmon who call it home. Kwanlin Dunn First Nation, Fisheries &amp; Oceans Canada, Yukon River Panel and the Yukon Fish &amp; Game Association are measuring water temperatures and their effect on salmon return.&nbsp; Detailed information available in our blog.&nbsp;<\/p>",
+              "text": "<p>Patagonia&#x27;s mission statement:<\/p><p>We are in business to save our home planet. <\/p><p><\/p><p>The buyers at Coast curate our Patagonia selection to ensure we have the best items for Yukoners: for our climate and our lives. <\/p><p><\/p><p>Patagonia, assisted by Coast Mountain Sports, has funded an ongoing study of the Ibex watershed and the salmon who call it home. Kwanlin Dunn First Nation, Fisheries &amp; Oceans Canada, Yukon River Panel and the Yukon Fish &amp; Game Association are measuring water temperatures and their effect on salmon return.  Detailed information available in our blog. <\/p>",
               "image": "shopify:\/\/shop_images\/POS-ducote_k_0102_BP.jpg",
+              "filtered_collections_per_row": 3,
               "filtered_collection_1_image": "shopify:\/\/shop_images\/Web_Large-hittmeier_l_0037_BP.jpg",
               "filtered_collection_1_title": "Women's",
-              "filtered_collection_1_link": "shopify:\/\/collections\/womens-patagonia",
+              "filtered_collection_1_link": "shopify:\/\/collections\/patagonia-womens",
               "filtered_collection_2_image": "shopify:\/\/shop_images\/Web_Large-huckaby_j_0024_BP.jpg",
               "filtered_collection_2_title": "Men's",
-              "filtered_collection_2_link": "shopify:\/\/collections\/mens-patagonia",
+              "filtered_collection_2_link": "shopify:\/\/collections\/patagonia-mens",
               "filtered_collection_3_image": "shopify:\/\/shop_images\/Web_Large-wilder_n_0015_BP.jpg",
               "filtered_collection_3_title": "Kids'",
-              "filtered_collection_3_link": "shopify:\/\/collections\/kids-patagonia"
+              "filtered_collection_3_link": "shopify:\/\/collections\/patagonia-kids",
+              "filtered_collection_4_title": "",
+              "filtered_collection_5_title": "",
+              "filtered_collection_6_title": ""
             }
           },
           "1597869962150": {
@@ -992,8 +1006,9 @@
               "logo": "shopify:\/\/shop_images\/rab_logo.jpeg",
               "logo_width": 200,
               "logo_text": "",
-              "text": "<p>Rab's story began in 1981 in the attic of a small, terraced house in Sheffield, England where Rab Carrington made the first sleeping bag to bear his name.&nbsp;<\/p>\n<p><\/p>\n<p>From the moment that our buyers saw Rab,&nbsp;they knew it was perfect for Yukon.&nbsp; Great insulated pieces in wonderful colours.&nbsp; Technical sleeping bags.&nbsp; Great outdoor heritage.<\/p>",
+              "text": "<p>Rab&#x27;s story began in 1981 in the attic of a small, terraced house in Sheffield, England where Rab Carrington made the first sleeping bag to bear his name. <\/p><p><\/p><p>From the moment that our buyers saw Rab, they knew it was perfect for Yukon.  Great insulated pieces in wonderful colours.  Technical sleeping bags.  Great outdoor heritage.<\/p>",
               "image": "shopify:\/\/shop_images\/AW19_Infinity_Blueprint_03.JPG",
+              "filtered_collections_per_row": 3,
               "filtered_collection_1_image": "shopify:\/\/shop_images\/HUG_3675.jpg",
               "filtered_collection_1_title": "Women's",
               "filtered_collection_1_link": "shopify:\/\/collections\/womens-rab",
@@ -1002,7 +1017,10 @@
               "filtered_collection_2_link": "shopify:\/\/collections\/mens-rab",
               "filtered_collection_3_image": "shopify:\/\/shop_images\/rab_lifestyle_sleepingbags_09.jpg",
               "filtered_collection_3_title": "Equipment",
-              "filtered_collection_3_link": "shopify:\/\/collections\/rab-equipment"
+              "filtered_collection_3_link": "shopify:\/\/collections\/rab-equipment",
+              "filtered_collection_4_title": "",
+              "filtered_collection_5_title": "",
+              "filtered_collection_6_title": ""
             }
           },
           "1597873666781": {
@@ -1012,8 +1030,9 @@
               "logo": "shopify:\/\/shop_images\/The_North_Face.jpg",
               "logo_width": 200,
               "logo_text": "",
-              "text": "<p>The North Face fundamental mission remains unchanged since 1966: Provide the best gear for our athletes and the modern day explorer, support the preservation of the outdoors, and inspire a global movement of exploration.<\/p>\n<p>We've been partners with The North Face for over 35 years to explore our Yukon and our World.<\/p>",
+              "text": "<p>The North Face fundamental mission remains unchanged since 1966: provide the best gear for our athletes and the modern day explorer, support the preservation of the outdoors, and inspire a global movement of exploration.<\/p><p>We&#x27;ve been partners with The North Face for over 35 years to explore our Yukon and our World.<\/p>",
               "image": "shopify:\/\/shop_images\/TheNorthFace-DSC4132.jpg",
+              "filtered_collections_per_row": 3,
               "filtered_collection_1_image": "shopify:\/\/shop_images\/Alegre_2019TGR_179180.jpg",
               "filtered_collection_1_title": "Women's",
               "filtered_collection_1_link": "shopify:\/\/collections\/womens-the-north-face",
@@ -1022,7 +1041,16 @@
               "filtered_collection_2_link": "shopify:\/\/collections\/mens-the-north-face",
               "filtered_collection_3_image": "shopify:\/\/shop_images\/Saunders_TNF_F19_CHILE-1217.jpg",
               "filtered_collection_3_title": "Kids'",
-              "filtered_collection_3_link": "shopify:\/\/collections\/kids-the-north-face"
+              "filtered_collection_3_link": "shopify:\/\/collections\/the-north-face-kids",
+              "filtered_collection_4_image": "shopify:\/\/shop_images\/Screen_Shot_2020-10-28_at_5.01.13_PM.png",
+              "filtered_collection_4_title": "Accessories",
+              "filtered_collection_4_link": "shopify:\/\/collections\/the-north-face-accessories",
+              "filtered_collection_5_image": "shopify:\/\/shop_images\/Screen_Shot_2020-10-28_at_5.06.55_PM.png",
+              "filtered_collection_5_title": "Footwear",
+              "filtered_collection_5_link": "shopify:\/\/collections\/the-north-face-footwear",
+              "filtered_collection_6_image": "shopify:\/\/shop_images\/Screen_Shot_2020-10-28_at_5.14.16_PM.png",
+              "filtered_collection_6_title": "Equipment",
+              "filtered_collection_6_link": "shopify:\/\/collections\/the-north-face-equipment"
             }
           },
           "1597880099819": {
@@ -1032,17 +1060,67 @@
               "logo": "shopify:\/\/shop_images\/Screen_Shot_2020-08-19_at_4.40.49_PM.png",
               "logo_width": 200,
               "logo_text": "",
-              "text": "<p>Pull-on, kick off easy. Try Blundstones and you&rsquo;ll be a fan for life.<\/p>\n<p>In Yukon we wear &lsquo;em to the mountains &amp; trails, to work and to weddings. There&rsquo;s a Blundstone Winter boot with Thinsulate and sheepskin for &lsquo;round town snow use&hellip; or just wear your summer Blunnies with a good pair of wool socks in winter. Not -30 material but hey you&rsquo;ll scratch through in town.<\/p>\n<p><br>These Boots are Unisex and have Australian sizing.<\/p>\n<p><br>For women subtract 3 sizes from your Canadian size.<br>For men subtract 1 size from your Canadian size.<br>For kid&rsquo;s subtract 1 size from your Canadian size.<\/p>",
+              "text": "<p>Pull-on, kick off easy. Try Blundstones and you’ll be a fan for life.<\/p><p>In Yukon we wear ‘em to the mountains &amp; trails, to work and to weddings. There’s a Blundstone Winter boot with Thinsulate and sheepskin for ‘round town snow use… or just wear your summer Blunnies with a good pair of wool socks in winter. Not -30 material but hey you’ll scratch through in town.<\/p><p><br\/>These Boots are Unisex and have Australian sizing.<\/p><p><br\/>For women subtract 3 sizes from your Canadian size.<br\/>For men subtract 1 size from your Canadian size.<br\/>For kid’s subtract 1 size from your Canadian size.<\/p>",
               "image": "shopify:\/\/shop_images\/9_Facebookpost.jpg",
-              "filtered_collection_1_image": "shopify:\/\/shop_images\/1_Facebookpost.jpg",
-              "filtered_collection_1_title": "Men's & Women's",
-              "filtered_collection_1_link": "shopify:\/\/collections\/mens-womens-blundstone",
+              "filtered_collections_per_row": 3,
+              "filtered_collection_1_image": "shopify:\/\/shop_images\/Screen_Shot_2020-10-29_at_11.26.46_AM.png",
+              "filtered_collection_1_title": "Women's",
+              "filtered_collection_1_link": "shopify:\/\/collections\/blundstone-womens",
               "filtered_collection_2_image": "shopify:\/\/shop_images\/17_Facebookpost.jpg",
               "filtered_collection_2_title": "Kids'",
               "filtered_collection_2_link": "shopify:\/\/collections\/kids-blundstone",
-              "filtered_collection_3_image": "",
-              "filtered_collection_3_title": "",
-              "filtered_collection_3_link": ""
+              "filtered_collection_3_image": "shopify:\/\/shop_images\/Screen_Shot_2020-10-29_at_11.29.11_AM.png",
+              "filtered_collection_3_title": "Men's",
+              "filtered_collection_3_link": "shopify:\/\/collections\/mens-womens-blundstone",
+              "filtered_collection_4_title": "",
+              "filtered_collection_5_title": "",
+              "filtered_collection_6_title": ""
+            }
+          },
+          "1602636689328": {
+            "type": "collection",
+            "settings": {
+              "collection": "share-the-warmth",
+              "logo_width": 165,
+              "logo_text": "SHARE THE WARMTH",
+              "text": "<p>Help Someone in Need &amp; Save $50 on a New Winter Jacket.<\/p><p>Bring a used winter jacket for adults or children in to Coast Mountain Sports by Wednesday October 21st and you will receive a coupon for $50 off the purchase of a brand new winter coast worth $250 or more!  The jackets will be cleaned by the High Country Inn and distributed by the Yukon Anti-Poverty Coalition to people who need them. <\/p><p>Here&#x27;s the Details: Jackets that you bring in can be for adults or for children and must be insulated and in good condition. You will receive one $50 off coupon for every coat that you bring in.  It is valid towards the purchase of any in-stock, regular priced jacket worth $250 or more from Coast Mountain Sports or Sports Experts on Main Street, Whitehorse until October 31st 2020. Only one Share the Warmth coupon can be used for every new jacket purcahsed.  The coupons are not valid for special orders and the discount can not be combined with any other discount or offer.  This coupon excludes Canada Goose jackets.  Can&#x27;t bring your old jackets in?  Email support@tsgyukon.com and we will work with you to help others... and to get $50 off! huge thanks to Air North<\/p>",
+              "image": "shopify:\/\/shop_images\/Screen_Shot_2020-10-13_at_12.45.19_PM.png",
+              "filtered_collections_per_row": 3,
+              "filtered_collection_1_image": "shopify:\/\/shop_images\/TNF_SJ_F19Youth_107_EDIT.png",
+              "filtered_collection_1_title": "Kids Jackets",
+              "filtered_collection_1_link": "shopify:\/\/collections\/kids-insulated-and-snowjackets",
+              "filtered_collection_2_image": "shopify:\/\/shop_images\/Indygena_selimut_vest.jpg",
+              "filtered_collection_2_title": "Women's Jackets",
+              "filtered_collection_2_link": "shopify:\/\/collections\/womens-insulated-snowjackets",
+              "filtered_collection_3_image": "shopify:\/\/shop_images\/Screen_Shot_2020-10-13_at_6.22.00_PM.png",
+              "filtered_collection_3_title": "Men's Jackets",
+              "filtered_collection_3_link": "shopify:\/\/collections\/mens-insulated-and-snow-jackets",
+              "filtered_collection_4_title": "",
+              "filtered_collection_5_title": "",
+              "filtered_collection_6_title": ""
+            }
+          },
+          "493c61b3-039a-4695-bcbc-ee613cc51788": {
+            "type": "collection",
+            "settings": {
+              "collection": "yukoner-appreciation-week",
+              "logo": "shopify:\/\/shop_images\/Screen_Shot_2020-10-30_at_1.55.52_PM.png",
+              "logo_width": 200,
+              "logo_text": "Yukoner Appreciation Week",
+              "text": "<p>Yukoner Appreciation has been around for a long time. It’s always been our way of celebrating our amazing territory and thanking Yukoners for their support. This year, more than ever, we are excited to recognize Yukoners and say <strong>Thank you<\/strong>. Thank you for believing in us and thank you for making an effort to support local.   <\/p><p>We have offered specials throughout the store. X-ski and all snow related equipment, electronics and certain brands must be excluded due to inventory issues and dealer agreements. <\/p>",
+              "image": "shopify:\/\/shop_images\/Screen_Shot_2020-10-30_at_1.52.41_PM.png",
+              "filtered_collections_per_row": 5,
+              "filtered_collection_1_image": "shopify:\/\/shop_images\/HUG_3675.jpg",
+              "filtered_collection_1_title": "Women's",
+              "filtered_collection_2_image": "shopify:\/\/shop_images\/Screen_Shot_2020-10-30_at_1.13.06_PM.png",
+              "filtered_collection_2_title": "Men's",
+              "filtered_collection_3_image": "shopify:\/\/shop_images\/Saunders_TNF_F19_CHILE-1217.jpg",
+              "filtered_collection_3_title": "Kids'",
+              "filtered_collection_4_image": "shopify:\/\/shop_images\/Screen_Shot_2020-10-30_at_1.27.07_PM.png",
+              "filtered_collection_4_title": "Equipment",
+              "filtered_collection_5_image": "shopify:\/\/shop_images\/Boots.jpg",
+              "filtered_collection_5_title": "Footwear",
+              "filtered_collection_6_title": ""
             }
           }
         },
@@ -1054,21 +1132,189 @@
           "1597868878399",
           "1597869962150",
           "1597873666781",
-          "1597880099819"
+          "1597880099819",
+          "1602636689328",
+          "493c61b3-039a-4695-bcbc-ee613cc51788"
         ],
         "settings": {
-          "show_collection_image": false,
-          "show_swatches": false,
-          "collection_products_per_row": 4,
+          "products_per_page": 24,
+          "products_per_row": 3,
+          "products_per_row_mobile": 2,
+          "show_vendor": true,
+          "show_price": true,
+          "show_sale_label": true,
+          "show_sold_out_label": true,
+          "active_image_swap": true,
+          "show_sorting": true,
+          "soldout_label": "Sold out",
+          "sale_label": "Sale",
+          "from": "from",
+          "display_item_swatch": true,
           "price_match_image": "shopify:\/\/shop_images\/Price_Match_Guarantee_new.png",
-          "price_match_image_width": 185,
+          "price_match_image_width": 150,
           "price_match_image_link": "shopify:\/\/pages\/price-match-guarantee"
+        }
+      },
+      "collection-template-boost-pfs-filter": {
+        "type": "collection-template-boost-pfs-filter",
+        "settings": {
+          "products_per_page": 24,
+          "products_per_row": 4,
+          "products_per_row_mobile": 2,
+          "show_vendor": false,
+          "show_price": true,
+          "show_sale_label": true,
+          "show_sold_out_label": true,
+          "active_image_swap": true,
+          "show_sorting": true,
+          "soldout_label": "Sold out",
+          "sale_label": "Sale",
+          "from": "from",
+          "display_item_swatch": true,
+          "price_match_image": "shopify:\/\/shop_images\/Price_Match_Guarantee_new.png",
+          "price_match_image_width": 150,
+          "price_match_image_link": "shopify:\/\/pages\/price-match-guarantee"
+        }
+      },
+      "1602622667511": {
+        "type": "dynamic-slideshow",
+        "blocks": {
+          "1602622667511-1": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/F20_Merino250_Gibson_CozyCabin_8665.png",
+              "title": "Merino",
+              "subheading": "Your cold weather friend.",
+              "link": "shopify:\/\/collections\/merino-wool",
+              "link_text": "Shop Merino Wool",
+              "link_style": "button",
+              "overlay_opacity": 0,
+              "overlay_color": "#707070",
+              "text_color": "#ffffff",
+              "heading_max_width": 16,
+              "text_max_width": 24,
+              "horizontal_text_position": "left",
+              "vertical_text_position": "middle"
+            }
+          },
+          "1602622667511-0": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/F20_Brand_Pashley_JCKSN_6400.png",
+              "title": "LAYER UP FOR ADVENTURE",
+              "subheading": "",
+              "link": "shopify:\/\/collections\/merino-wool",
+              "link_text": "Shop Merino Wool",
+              "link_style": "button",
+              "overlay_opacity": 0,
+              "overlay_color": "#707070",
+              "text_color": "#466634",
+              "heading_max_width": 16,
+              "text_max_width": 24,
+              "horizontal_text_position": "right",
+              "vertical_text_position": "middle"
+            }
+          },
+          "1602895439801": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/WOMENS_CITY_LOCATION_105518614_DROP_SHOULDER_TOP_105525614_TAILORED_TROUSER_1.jpg",
+              "title": "Not Just For Outdoors",
+              "subheading": "",
+              "link": "shopify:\/\/collections\/merino-casual",
+              "link_text": "Shop Merino Casuals",
+              "link_style": "button",
+              "overlay_opacity": 0,
+              "overlay_color": "#686868",
+              "text_color": "#ffffff",
+              "heading_max_width": 16,
+              "text_max_width": 24,
+              "horizontal_text_position": "left",
+              "vertical_text_position": "bottom"
+            }
+          },
+          "1602896425075": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/MEN-FW18-LOCATION-HIKE_-CREW-MEDIUM-CUSHION-104435401_1.png",
+              "title": "WARM DRY FEET",
+              "subheading": "",
+              "link": "shopify:\/\/collections\/merino-wool",
+              "link_text": "Shop our merino brands",
+              "link_style": "button",
+              "overlay_opacity": 0,
+              "overlay_color": "#707070",
+              "text_color": "#ffffff",
+              "heading_max_width": 16,
+              "text_max_width": 24,
+              "horizontal_text_position": "left",
+              "vertical_text_position": "middle"
+            }
+          },
+          "1602896426192": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/KIDS-FW19-LOCATION-200-OASIS-LS-CREWE-104501013_4.png",
+              "title": "WARM MERINO FOR KIDS",
+              "subheading": "",
+              "link": "shopify:\/\/collections\/merino-wool",
+              "link_text": "Shop Merino Wool",
+              "link_style": "button",
+              "overlay_opacity": 0,
+              "overlay_color": "#707070",
+              "text_color": "#000000",
+              "heading_max_width": 16,
+              "text_max_width": 24,
+              "horizontal_text_position": "left",
+              "vertical_text_position": "middle"
+            }
+          }
+        },
+        "block_order": [
+          "1602622667511-1",
+          "1602622667511-0",
+          "1602895439801",
+          "1602896425075",
+          "1602896426192"
+        ],
+        "settings": {
+          "aspect_ratio": "full_height"
+        }
+      },
+      "gdc-cards": {
+        "type": "gdc-cards",
+        "blocks": {
+          "6da926c3-b0f4-419d-b3ef-dd180f00d7e1": {
+            "type": "Card",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/image002.png",
+              "text": "<p><strong>Online Only E-Gift Cards<\/strong><\/p><p>Give the best outdoor equipment, footwear, and clothing, carefully chosen for northern life! Choose from our $25, $50, $100, $250 or $500 e-gift cards! Or Available in $25 increments up to $500<\/p><p><\/p>",
+              "button_url": "https:\/\/cmsyukon.ca\/products\/egift-cards"
+            }
+          },
+          "ca455a57-bc07-425c-b5e8-dbffd20b5689": {
+            "type": "Card",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/image001_1.png",
+              "text": "<p> <strong>In-Store Only Gift Cards<\/strong><\/p><p>Would you rather give the gift of in-store shopping?  In-store only cards are valid at our Coast Mountain Sports store, at Sports Experts, and at Hougen’s SportsLodge here on Main Street in Whitehorse, Yukon. <\/p>",
+              "button_url": "https:\/\/cmsyukon.ca\/products\/gift-cards"
+            }
+          }
+        },
+        "block_order": [
+          "6da926c3-b0f4-419d-b3ef-dd180f00d7e1",
+          "ca455a57-bc07-425c-b5e8-dbffd20b5689"
+        ],
+        "settings": {
+          "header_image": "shopify:\/\/shop_images\/annie-spratt-hqkYp-Ookk4-unsplash.jpg",
+          "header_title": "The Most Versatile Gifts Ever",
+          "header_text": "<p>Choose from E-Gift Cards or In-Store Gift Cards<\/p>",
+          "bottom_text": "<p> We’ve set up $25, $50, $100, $250, or $500 gift cards that we will send out for you.<\/p><p>Or Available in $25 increments up to $500<\/p><p>Please note, due to technical reasons, on-line cards cannot be used in the stores <\/p><p>and in-store cards cannot be used online at this time. <\/p><p> We cannot ship to Québec or outside of Canada.<\/p><p><em>No gift cards can be redeemed or exchanged for cash.  <\/em><\/p><p><em>Gift cards cannot be replaced if they are stolen, lost or, damaged. <\/em><\/p>"
         }
       }
     },
     "content_for_index": [
       "dynamic-slideshow",
-      "1593554571859",
       "dynamic-collage",
       "1588995964747",
       "1588996136594",
@@ -1078,6 +1324,8 @@
       "1588996524985",
       "1588996093012",
       "1588992606527",
+      "1602622667511",
+      "1593554571859",
       "1590444203962",
       "1590281535580",
       "1590282390267",

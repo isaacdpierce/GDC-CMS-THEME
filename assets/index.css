@@ -3368,7 +3368,7 @@ Overrides .visually-hidden when focused */
   }
   .fw7-ns {
     font-weight: 700;
-  }
+  } 
   .fw8-ns {
     font-weight: 800;
   }
@@ -12836,8 +12836,7 @@ div[data-media-type='external_video'] iframe {
 
 .nav .nav__submenu.nav__meganav {
       background-color: transparent;
-      transform: translateX(10%);
-      width: 80%;
+      width: 100%;
       box-shadow: none;
       padding-top: 10px;
       padding-top: var(--spacing-small);
@@ -13475,4 +13474,31 @@ div[data-media-type='external_video'] iframe {
   transform: translate(-50%, -50%);
   color: white;
   font-size: var(--font-size-body-large);
+}
+
+.gdc-branded-collection__header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.gdc-no-matches {
+  font-size: 24px;
+  margin: 40px auto;
+}
+  
+  
+/*HEADER FIX*/
+  
+  
+@media (min-width: 960px) {
+  #shopify-section-static-header.is-sticky .header__sticky-logo-wrapper#gdc-sticky-header {
+    position: static;
+    display: inline-block;
+    width: 13%;
+    float: left;
+    max-height: 43px;
+    transform: translate(0, -8px);
+  }   
 }

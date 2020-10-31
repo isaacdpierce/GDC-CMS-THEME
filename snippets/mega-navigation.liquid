@@ -1,7 +1,7 @@
 <ul class="mega-navigation">
   {% for link in link.links %}
     <li class="mega-navigation__list {% if forloop.last != true %}mega-navigation__list--border{% endif %}">
-      <h3 class="mega-navigation__list-heading"><a href="{{ link.url }}">{{ link.title }}</a></h4>
+      <h4 class="mega-navigation__list-heading"><a href="{{ link.url }}">{{ link.title }}</a></h4>
       {% include 'navmenu' with
         menu: link.handle
       %}

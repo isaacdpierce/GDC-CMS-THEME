@@ -1,0 +1,11 @@
+{% include 'page-header' with title: page.title, hide_breadcrumbs: true %}
+
+<section class="mw-c center ph3 ph4-ns">
+  
+  {% if page.content != blank %}
+    <div class="type-body-large rte centered-content mb6">
+      {{ page.content }}
+    </div>
+  {% endif %}
+  {% section 'gdc-cards' %}
+</section>

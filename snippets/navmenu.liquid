@@ -41,7 +41,7 @@
     {% comment %} Simple nav item {% endcomment %}
     {% unless show_subnav or show_meganav %}
       <li class="nav__item nav__item-{{ link.handle }}">
-        <a class="nav__link {% if link.active %}active{% endif %} gdc-js-menu" href="{{ link.url }}" >{{ link.title }}</a>
+        <a class="nav__link {% if link.active %}active{% endif %}" href="{{ link.url }}">{{ link.title }}</a>
       </li>
 
     {% comment %} Item with children or mega nav {% endcomment %}
@@ -58,7 +58,7 @@
         {% if has_triggers %}data-navmenu-trigger{% endif %}
         {% if has_triggers and show_meganav %}data-navmenu-meganav-trigger{% endif %}
       >
-        <a class="nav__link nav__link-parent {% if link.active %}active{% endif %} gdc-js-menu-link" href="{{ link.url }}">{{ link.title }}</a>
+        <a class="nav__link nav__link-parent gdc-js-menu-link {% if link.active %}active{% endif %}" href="{{ link.url }}">{{ link.title }}</a>
 
         {% comment %} Item with a meganav {% endcomment %}
         {% if show_meganav %}
@@ -68,7 +68,6 @@
             {% if is_site_nav %}nav__meganav--desktop{% endif %}
           {%- endcapture -%}
 
-          {% comment %} SUBMENU {% endcomment %}
           <div class="z-5 absolute w-100 left-0 {{ meganav_classes }}" data-nav-submenu data-meganav-menu>
             <div class="w-100 mw-c center ph4">
               {% include 'mega-navigation' with

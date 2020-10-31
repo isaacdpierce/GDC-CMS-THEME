@@ -29,6 +29,7 @@ var gdcEqualHeightProductTiles = function () {
 
     $productTileImages.forEach(function ($element) {
       var tempheight = $element.offsetHeight;
+
       if (tempheight > maxHeight) {
         maxHeight = tempheight;
       }
@@ -60,11 +61,6 @@ var gdcToggle = function ($element) {
 };
 
 document.addEventListener('DOMContentLoaded', function () {
-  let navItems = document.querySelectorAll('.nav__submenu');
-
-  for (item of navItems) {
-    item.setAttribute('onclick', 'event.stopPropagation()');
-  }
   // ======================================================================
   // Equal heights for product tiles
   gdcEqualHeightProductTiles();

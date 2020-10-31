@@ -132,7 +132,13 @@
     {{ 'index.css' | asset_url | stylesheet_tag }}
 
     {{ content_for_header }}
-  </head>
+  
+<!--begin-boost-pfs-filter-css-->
+  {% include 'boost-pfs-style' %}
+<!--end-boost-pfs-filter-css-->
+
+
+</head>
 
   <body class='{%- if settings.uppercase_headings -%}g-uppercase{%- endif -%} preload'>
 
@@ -150,5 +156,9 @@
     {{ '//cdn.shopify.com/shopifycloud/shopify-plyr/v1.0/shopify-plyr.css' | stylesheet_tag }}
     <script src='{{ 'index.js' | asset_url }}' defer='defer'></script>
     <script src='{{ 'gdc.js' | asset_url }}' defer='defer'></script>
-  </body>
+  
+<!--begin-boost-pfs-js-->
+  {% include 'boost-pfs' %}
+<!--end-boost-pfs-js-->
+</body>
 </html>

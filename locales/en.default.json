@@ -146,7 +146,7 @@
   },
   "collections": {
     "general": {
-      "no_matches": "We are busy adding more products! Check back soon.",
+      "no_matches": "Coming Soon!",
       "link_title": "Browse our {{ title }} collection",
       "name": "Collection",
       "filter": "Filter",

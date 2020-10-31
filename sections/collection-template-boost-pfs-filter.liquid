@@ -1,127 +1,50 @@
-<section
-  data-section-id="{{ section.id }}"
-  data-section-type="static-collection"
-  class="collection"
->
-
 {%- assign products_per_page = section.settings.products_per_page -%}
 {%- paginate collection.products by products_per_page -%}
 
 {%- comment -%} COLLECTION HEADER {%- endcomment -%}
+<div class="boost-pfs-filter-collection-header-wrapper">
+  <div class="boost-pfs-container-default">
 
-{% for block in section.blocks %}
-{% if block.settings.collection == collection.handle %}
+    <div class="boost-pfs-section-header">
+      <div>
+        <p class="type-heading-meta meta mt0 mb3">
+          Collection
+        </p>
+        <h1 class="type-heading-1 mv3 ma0">
+          <span role="text">
+            {{ collection.title }}
+          </span>
+        </h1>
+      </div>
+      {% if section.settings.price_match_image != blank %}
+      <style>
+        {% assign width = section.settings.price_match_image_width | plus: 0 %}
+        
+        .collection__details__image img {
+          max-width: {{ width }}px;
+        }
+      </style>
 
-  <div class="section gdc-branded-collection">
-
-    <div class="gdc-branded-collection__header">
-
-    <div class="gdc-branded-collection__logo">
-      {% if block.settings.logo != blank %}
-        <style>
-          {% assign width = block.settings.logo_width | plus: 0 %}
-
-          .gdc-branded-collection__logo-image {
-            max-width: {{ width }}px;
-          }
-        </style>
-      {% endif %}
-      
-      <div class="gdc-branded-collection__logo-image">
-        {% if block.settings.logo != blank %}
-          {% include 'responsive-image' with
-            image: block.settings.logo,
-            max_width: 480,
-            max_height: 480
-          %}
-        {% else %}
-          {{ block.settings.logo_text }}
+      <div class="collection__details__image">
+        {% if section.settings.price_match_image_link != blank %}
+          <a href="{{ section.settings.price_match_image_link }}">
+        {% endif %}
+        
+          {{ section.settings.price_match_image | img_url: '300x', scale: 2 | img_tag }}
+         
+        {% if section.settings.price_match_image_link != blank %}
+          </a>
         {% endif %}
       </div>
-    </div>
-
-    {% if section.settings.price_match_image != blank %}
-    <style>
-      {% assign width = section.settings.price_match_image_width | plus: 0 %}
-      
-      .gdc-branded-collection__price-match {
-        max-width: {{ width }}px;
-      }
-    </style>
-  
-    <div class="gdc-branded-collection__price-match">
-      {% if section.settings.price_match_image_link != blank %}
-        <a href="{{ section.settings.price_match_image_link }}">
-      {% endif %}
-      
-        {{ section.settings.price_match_image | img_url: '300x', scale: 2 | img_tag }}
-       
-      {% if section.settings.price_match_image_link != blank %}
-        </a>
-      {% endif %}
-    </div>
-    </div>
-  {% endif %}
-
-
-    <div class="gdc-branded-collection__content">
-      <div class="gdc-branded-collection__content-text">
-        {{ block.settings.text }}
-      </div>
-
-      <div class="gdc-branded-collection__content-image">
-        {%- assign image_object = block.settings.image -%}
-        
-        {% include 'responsive-image' with
-          image: image_object,
-          max_width: 2048,
-          max_height: 2048
-        %}
-      </div>
-    </div>
-
-    <div class="gdc-branded-collection__collections">
-      {% assign count = block.settings.filtered_collections_per_row %}
-
-      {% case count %}
-      {% when 2 %}
-        {%- assign grid_width = 'w-50-m w-50-l' -%}
-      {% when 3 %}
-        {%- assign grid_width = 'w-third-m w-third-l' -%}
-      {% when 4 %}
-        {%- assign grid_width = 'w-25-m w-25-l' -%}
-      {% when 5 %}
-        {%- assign grid_width = 'w-20-m w-20-l' -%}
-      {% when 6 %}
-        {%- assign grid_width = 'w-third-m w-third-l' -%}
-      {% endcase %}
-
-      {% for i in (1..count) %}
-        {% capture image_setting %}filtered_collection_{{ i }}_image{% endcapture %}
-        {% capture title_setting %}filtered_collection_{{ i }}_title{% endcapture %}
-        {% capture link_setting %}filtered_collection_{{ i }}_link{% endcapture %}
-        {%- assign image = block.settings[image_setting] %}
-        {%- assign title = block.settings[title_setting] %}
-        {%- assign link = block.settings[link_setting] %}
-      
-        <div class="gdc-branded-collection__collection w-50 {{ grid_width }} ph1 ph2-ns mb2">
-    <a href="{{ link }}" class="gdc-branded-collection__collection-link">
-            {% include 'responsive-image' with
-              image: image,
-              max_width: 480,
-              max_height: 480
-            %}
-            
-            <div class="gdc-branded-collection__collection-title">{{ title }}</div>
-          </a>
+    {% endif %}
+      {%- if collection.description != blank -%}
+        <div class="boost-pfs-filter-collection-description rte">
+          {{ collection.description }}
         </div>
-      {% endfor %}
+      {%- endif -%}
     </div>
   </div>
-
-  {% break %}
-{% endif %}
-{% endfor %}
+</div>
 
 {%- comment -%} END COLLECTION HEADER {%- endcomment -%}
 {%- comment -%} TOOLBAR TOP MOBILE {%- endcomment -%}
@@ -180,7 +103,6 @@
   {%- comment -%} end-bc-recently-viewed-template {%- endcomment -%}
 </div>
 {%- endpaginate -%}
-</section>
 
 <script>
   // Declare boostPFSThemeConfig variable
@@ -261,7 +183,7 @@
 
 {% schema %}
   {
-    "name": "Branded collection pages",
+    "name": "Collection pages",
     "settings": [
       {
         "type": "range",
@@ -350,202 +272,30 @@
         "label": "Enable Display Item Swatch",
         "default": true
       },
-	  {
+      {
         "type": "header",
         "content": "Price Match Image"
       },
-	  {
+      {
         "type": "image_picker",
         "id": "price_match_image",
         "label": "Image"
       },
-	  {
+	    {
         "type": "range",
         "id": "price_match_image_width",
         "label": "Image width",
         "min": 100,
         "max": 200,
         "step": 5,
-	    	"unit": "px",
+		"unit": "px",
         "default": 150
       },
-	  {
+	    {
         "type": "url",
         "id": "price_match_image_link",
         "label": "Image link"
       }
-    ],
-	"blocks": [
-	  {
-		"type": "collection",
-		"name": "Collection",
-		"settings": [
-		  {
-			"type": "collection",
-			"id": "collection",
-			"label": "Collection",
-			"info": "Collection that the following settings should apply to"
-		  },
-		  {
-			"type": "image_picker",
-			"id": "logo",
-			"label": "Logo"
-		  },
-    	  {
-            "type": "range",
-            "id": "logo_width",
-            "label": "Image width",
-            "min": 100,
-            "max": 300,
-            "step": 5,
-            "unit": "px",
-            "default": 200
-          },
-		  {
-			"type": "text",
-			"id": "logo_text",
-			"label": "Logo text",
-			"info": "Will display if no image is selected"
-		  },
-		  {
-			"type": "richtext",
-			"id": "text",
-			"label": "Text"
-		  },
-		  {
-			"type": "image_picker",
-			"id": "image",
-			"label": "Image"
-      },
-      {
-			"type": "header",
-			"content": "Collection Images To Show"
-		  },
-      {
-        "type": "range",
-        "id": "filtered_collections_per_row",
-        "label": "Collection Images Per Row",
-        "min": 2,
-        "max": 6,
-        "step": 1,
-        "default": 3
-      },
-		  {
-			"type": "header",
-			"content": "Filtered collection 1"
-		  },
-		  {
-			"type": "image_picker",
-			"id": "filtered_collection_1_image",
-			"label": "Image"
-		  },
-		  {
-			"type": "text",
-			"id": "filtered_collection_1_title",
-			"label": "Title"
-		  },
-		  {
-			"type": "url",
-			"id": "filtered_collection_1_link",
-			"label": "Link"
-		  },
-		  {
-			"type": "header",
-			"content": "Filtered collection 2"
-		  },
-		  {
-			"type": "image_picker",
-			"id": "filtered_collection_2_image",
-			"label": "Image"
-		  },
-		  {
-			"type": "text",
-			"id": "filtered_collection_2_title",
-			"label": "Title"
-		  },
-		  {
-			"type": "url",
-			"id": "filtered_collection_2_link",
-			"label": "Link"
-		  },
-		  {
-			"type": "header",
-			"content": "Filtered collection 3"
-		  },
-		  {
-			"type": "image_picker",
-			"id": "filtered_collection_3_image",
-			"label": "Image"
-		  },
-		  {
-			"type": "text",
-			"id": "filtered_collection_3_title",
-			"label": "Title"
-		  },
-		  {
-			"type": "url",
-			"id": "filtered_collection_3_link",
-			"label": "Link"
-		  },
-		  {
-			"type": "header",
-			"content": "Filtered collection 4"
-		  },
-		  {
-			"type": "image_picker",
-			"id": "filtered_collection_4_image",
-			"label": "Image"
-		  },
-		  {
-			"type": "text",
-			"id": "filtered_collection_4_title",
-			"label": "Title"
-		  },
-		  {
-			"type": "url",
-			"id": "filtered_collection_4_link",
-			"label": "Link"
-		  },
-		  {
-			"type": "header",
-			"content": "Filtered collection 5"
-		  },
-		  {
-			"type": "image_picker",
-			"id": "filtered_collection_5_image",
-			"label": "Image"
-		  },
-		  {
-			"type": "text",
-			"id": "filtered_collection_5_title",
-			"label": "Title"
-		  },
-		  {
-			"type": "url",
-			"id": "filtered_collection_5_link",
-			"label": "Link"
-		  },
-		  {
-			"type": "header",
-			"content": "Filtered collection 6"
-		  },
-		  {
-			"type": "image_picker",
-			"id": "filtered_collection_6_image",
-			"label": "Image"
-		  },
-		  {
-			"type": "text",
-			"id": "filtered_collection_6_title",
-			"label": "Title"
-		  },
-		  {
-			"type": "url",
-			"id": "filtered_collection_6_link",
-			"label": "Link"
-		  }
-		]
-	  }
-	]
+    ]
   }
 {% endschema %}
