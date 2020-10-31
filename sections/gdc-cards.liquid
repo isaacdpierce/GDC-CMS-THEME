@@ -5,7 +5,7 @@
 
 <div class="gdc-gift-card__section">
   <header class="gdc-image-hero">
-    <img class="gdc-card__image" src="{{ header_image | img_url: '300x' }}" /> 
+    <img class="gdc-card__image" src="{{ header_image | img_url: '1200x' }}" /> 
   </header>
 
   <div class="gdc-text-section">
@@ -20,6 +20,7 @@
     {% assign card_image = block.settings.image %}
     {% assign card_text = block.settings.text %}
     {% assign button_url = block.settings.button_url %}
+    {% assign button_text = block.settings.button_text %}
 
     <div class="gdc-card">
       <div class="gdc-card__header">
@@ -30,7 +31,7 @@
       <div class="gdc-card__text">
         {{ card_text }}	
       </div>
-      <a href={{ button_url }} class="gdc-card__button" target="_blank"><span>Send a Gift Card</span></a>
+      <a href={{ button_url }} class="gdc-card__button" target="_blank"><span>{{ button_text }}</span></a>
     </div> 
     {% endfor %}
   </div>
@@ -137,11 +138,12 @@
 
   .gdc-card__button {
 	border: 1px solid #333;  
-	padding: 10px;
+	padding: 10px 0;
 	margin-bottom: 20px; 
-	width: 200px;
+	width: 100%;
 	justify-content: center;         
-	align-items: center;
+  align-items: center;
+  text-align: center;
   }
 {% endstylesheet %}
 
@@ -189,6 +191,11 @@
           "id": "text",
           "type": "richtext",
           "label": "Card Text"
+        },
+        {
+          "id": "button_text",
+          "type": "text",
+          "label": "Button Text"
         },
         {
           "id": "button_url",

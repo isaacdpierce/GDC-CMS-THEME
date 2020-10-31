@@ -1,3 +1,4 @@
+{%- assign header_image = section.settings.header_image -%}  
 {%- assign products_per_page = section.settings.products_per_page -%}
 {%- paginate collection.products by products_per_page -%}
 
@@ -46,6 +47,9 @@
   </div>
 </div>
 
+{% include 'gdc-collection-image-header' %}
+
+
 {%- comment -%} END COLLECTION HEADER {%- endcomment -%}
 {%- comment -%} TOOLBAR TOP MOBILE {%- endcomment -%}
 <div class="boost-pfs-filter-toolbar-top-mobile">
@@ -67,6 +71,7 @@
       <div class="boost-pfs-filter-toolbar-item boost-pfs-filter-custom-sorting boost-pfs-filter-top-sorting">{%- include 'boost-pfs-filter-skeleton', width: 1 -%}</div>
     </div>
 </div>
+
 {%- comment -%} END TOOLBAR {%- endcomment -%}
 
 <div class="boost-pfs-container-default boost-pfs-filter-wrapper-page">
@@ -247,6 +252,11 @@
         "id": "show_sorting",
         "label": "Enable collection sorting",
         "default": true
+      },
+      {
+        "type": "image_picker",
+        "id": "header_image",
+        "label": "Header Image"
       },
       {
         "type": "text",
